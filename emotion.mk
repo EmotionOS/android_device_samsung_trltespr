@@ -16,8 +16,6 @@
 
 $(call inherit-product, device/samsung/trltespr/full_trltespr.mk)
 
-# Enhanced NFC
-
 # Inherit common EMOTION phone.
 $(call inherit-product, vendor/emotion/configs/common_full_phone.mk)
 
