@@ -36,22 +36,22 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 /**
- * RIL customization for Galaxy S5 (GSM) LTE devices
+ * RIL customization for Galaxy Note 4 LTE devices
  *
  * {@hide}
  */
-public class KlteRIL extends RIL {
+public class trlteRIL extends RIL {
 
     private static final int RIL_UNSOL_ON_SS_LL = 11055;
 
     private boolean mIsGsm = false;
 
-    public KlteRIL(Context context, int networkMode, int cdmaSubscription) {
+    public trlteRIL(Context context, int networkMode, int cdmaSubscription) {
         super(context, networkMode, cdmaSubscription, null);
         mQANElements = 6;
     }
 
-    public KlteRIL(Context context, int preferredNetworkType,
+    public trlteRIL(Context context, int preferredNetworkType,
             int cdmaSubscription, Integer instanceId) {
         super(context, preferredNetworkType, cdmaSubscription, instanceId);
         mQANElements = 6;
